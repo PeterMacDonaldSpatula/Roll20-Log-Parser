@@ -1,7 +1,7 @@
 const cheerio = require('cheerio');
 const fs = require('fs-extra');
 
-const SESSION_BREAK_THRESHOLD = 648000000;
+const SESSION_BREAK_THRESHOLD = 108000000;
 
 var $;
 
@@ -97,7 +97,7 @@ var getDate = function(dateString) {
 var getMessages = function(input) {
 
   var messageObj;
-
+  console.log("Now parsing your file. Please be patient. This may take a while.");
   var result = input.replace(/(<img[^>]+)/g, "$1 /");
   $ = cheerio.load(result, {
     normalizeWhiteSpace : true,

@@ -11,6 +11,10 @@ const rl = readline.createInterface({
 var filename;
 var title;
 
+process.on('exit', (code) => {
+  console.log('Finished!');
+});
+
 rl.question('What is the log filename? ', (answer) => {
   filename = answer;
   rl.question('What is the name of this campaign? ', (answer) => {

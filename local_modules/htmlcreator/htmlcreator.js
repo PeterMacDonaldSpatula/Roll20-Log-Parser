@@ -102,16 +102,17 @@ var createTextBody = function(message) {
   return output;
 }
 
-var createPage = function(session, sessionNumber, title) {
+var createPage = function(session, sessionNumber, title, endMarker) {
   var output = createHeader(title);
   output +=createBody(session);
-  output +=createFooter(sessionNumber);
+  if (endMarker) {
+    output += createFooter(sessionNumber * (-1));
+  } else {
+    output +=createFooter(sessionNumber);
+  }
   writefile('output/' + sessionNumber + '.html', output, function(err) {
     if (err) return console.log(err);
     console.log("Creating file " + sessionNumber + ".html...");
-    if (sessionNumber < 0) {
-      console.log("Finished!");
-    }
   });
 }
 
@@ -119,7 +120,11 @@ var createPages = function(sessions, title) {
   var tableOfContents = "<!doctype html>\n<html lang=\"en\">\n<head>\n<title>\n" + title + "\n</title>\n<!-- Bootstrap CSS -->\n<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css\" integrity=\"sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb\" crossorigin=\"anonymous\">\n</head>\n";
   tableOfContents += "<body>\n<div class = \"container\">\n";
   for (var i=0; i < sessions.length; i++) {
-    createPage(sessions[i], i+1, title);
+    if (i < sessions.length -1) {
+      createPage(sessions[i], i+1, title);
+    } else {
+      createPage(sessions[i], i+1, title, true);
+    }
     tableOfContents += '<div><a href=\"' + (i+1) + '.html\">Session ' + (i+1) + '</a></div>';
   }
   tableOfContents +="<!-- Bootstrap JS. -->\n";

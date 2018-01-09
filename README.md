@@ -29,3 +29,5 @@ Dice rolls are represented as just plain-text numbers, without indicating the ma
 The resulting HTML documents, although servicable, are kind of plain and shitty-looking.
 
 If the same person says the last lines of a session, and also the first lines of the next session, all of their lines will be put at the end of the first session. This cannot be solved unless Roll20 changes how their logs are represented.
+
+In its current state, this app is not particularly user-friendly; I plan to turn it into a web server that people can upload their logs to and get a zip file back.

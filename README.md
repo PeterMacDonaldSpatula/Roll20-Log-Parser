@@ -1,4 +1,4 @@
-# Roll20-Log-Parser 0.0.1
+# Roll20-Log-Parser v0.0.1
 
 A Node.js application which converts a Roll20 Chatlog into a more readable format.
 

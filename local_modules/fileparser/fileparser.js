@@ -104,7 +104,15 @@ var getMessages = function(input) {
     recognizeSelfClosing : true
   });
 
-  $('.message').each(function(i, elem) { //@TODO: Parse shit up
+  fs.remove('/output', err=> {
+    if (err) {
+
+    } else {
+      console.log("Clearing output directory.");
+    }
+  });
+
+  $('.message').each(function(i, elem) {
     if ($(this).hasClass('desc')) {
       //console.log("DESC MESSAGE");
       if (!(messageObj === undefined)) {

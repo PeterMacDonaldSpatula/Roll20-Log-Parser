@@ -1,0 +1,21 @@
+{
+  "name": "roll20logger",
+  "version": "0.0.1",
+  "description": "A node server that takes in HTML documents created by Roll20's chat logs and outputs the log broken up in parts.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Peter MacDonald",
+  "license": "ISC",
+  "dependencies": {
+    "read-file": "^0.2.0",
+    "write-file": "^1.0.0",
+    "fs-extra": "^5.0.0",
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PeterMacDonaldSpatula/Roll20-Log-Parser.git"
+  }
+}

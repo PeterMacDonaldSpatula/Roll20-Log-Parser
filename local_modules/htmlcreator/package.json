@@ -1,0 +1,14 @@
+{
+  "name": "htmlcreator",
+  "version": "0.0.2",
+  "description": "A helper module for creating the output webpages for the roll20 log parser.",
+  "main": "htmlcreator.js",
+  "scripts": {
+    "test": "node htmlcreator.js"
+  },
+  "author": "Peter MacDonald",
+  "license": "ISC",
+  "dependencies": {
+    "write-file": "^1.0.0"
+  }
+}

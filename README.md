@@ -33,3 +33,5 @@ If the same person says the last lines of a session, and also the first lines of
 In its current state, this app is not particularly user-friendly; I plan to turn it into a web server that people can upload their logs to and get a zip file back.
 
 Non-English characters get mangled in the parsing.
+
+Avatar images always display at 100x100, disregarding original size or aspect ratio.

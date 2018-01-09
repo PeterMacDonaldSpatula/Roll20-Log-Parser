@@ -26,7 +26,7 @@ When it finishes, your files will be found in the 'output' directory.
 
 Dice rolls are represented as just plain-text numbers, without indicating the math behind them, or having any special formatting. This will be solved, but I'll have to redo some of my parsing code to figure it out.
 
-The resulting HTML documents, although servicable, are kind of plain and shitty-looking.
+The resulting HTML documents, although serviceable, are kind of plain and shitty-looking.
 
 If the same person says the last lines of a session, and also the first lines of the next session, all of their lines will be put at the end of the first session. This cannot be solved unless Roll20 changes how their logs are represented.
 

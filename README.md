@@ -12,7 +12,7 @@ Download the repository as a zip file, and then extract it to a directory of you
 After the installer runs, you're ready to use the app.
 
 #Execution
-Open your Roll20 log, and then in your web browser click **File > Save Page As...**. Save it to the directory containing the app.js file.
+Open your Roll20 log, and then in your web browser click **File > Save Page As...** and save it to the directory containing the app.js file.
 
 Then open a commnd prompt window (cmd), navigate it to that directory, and execute the following command:
 

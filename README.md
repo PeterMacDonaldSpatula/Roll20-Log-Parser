@@ -1,9 +1,8 @@
 # Roll20-Log-Parser
 
-##Description
 A Node.js application which converts a Roll20 Chatlog into a more readable format.
 
-##Installation
+#Installation
 In order to use this app, you need to have [Node.js](https://nodejs.org) installed, along with the Node Package Manager (included int he Node.js installer, just don't uncheck it in the installer). I've tested it with version 8.9.4 (the most recent stable version at the time of writing)
 
 Download the repository as a zip file, and then extract it to a directory of your choice. Open a command prompt window and navigate it to the directory in question. Then run the command:
@@ -12,7 +11,7 @@ Download the repository as a zip file, and then extract it to a directory of you
 
 After the installer runs, you're ready to use the app.
 
-##Execution
+#Execution
 Open your Roll20 log, and then in your web browser click **File > Save Page As...**. Save it to the directory containing the app.js file.
 
 Then open a commnd prompt window (cmd), navigate it to that directory, and execute the following command:
@@ -23,7 +22,7 @@ You will then be prompted to provide the name of the html file and the name of t
 
 When it finishes, your files will be found in the 'output' directory.
 
-##Known Issues
+#Known Issues
 
 Dice rolls are represented as just plain-text numbers, without indicating the math behind them, or having any special formatting. This will be solved, but I'll have to redo some of my parsing code to figure it out.
 

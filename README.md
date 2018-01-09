@@ -14,13 +14,13 @@ After the installer runs, you're ready to use the app.
 ## Execution
 Open your Roll20 log, and then in your web browser click **File > Save Page As...** and save it to the directory containing the app.js file.
 
-Then open a commnd prompt window (cmd), navigate it to that directory, and execute the following command:
+Then open a command prompt window (cmd), navigate it to that directory, and execute the following command:
 
 `node app.js`
 
-You will then be prompted to provide the name of the html file and the name of the campaign. Once you do, the app will run. 
+You will then be prompted to provide the name of the html file and the name of the campaign. Once you do, the app will run. If your log is long, this may take a while, so be patient.
 
-When it finishes, your files will be found in the 'output' directory.
+When it finishes, your files will be found in the 'output' directory. Make sure you move everything out of this directory, including the 'img' folder, before you parse another log, or else the first parsed log will be erased.
 
 ## Known Issues
 

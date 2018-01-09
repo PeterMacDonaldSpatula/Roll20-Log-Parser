@@ -109,6 +109,9 @@ var createPage = function(session, sessionNumber, title) {
   writefile('output/' + sessionNumber + '.html', output, function(err) {
     if (err) return console.log(err);
     console.log("Creating file " + sessionNumber + ".html...");
+    if (sessionNumber < 0) {
+      console.log("Finished!");
+    }
   });
 }
 
@@ -127,7 +130,6 @@ var createPages = function(sessions, title) {
   writefile('output/toc.html', tableOfContents, function(err) {
     if (err) return console.log(err);
     console.log("Creating table of contents...");
-    console.log("Finished!");
   });
 }
 
